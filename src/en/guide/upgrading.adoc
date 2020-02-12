@@ -189,7 +189,29 @@ bootJar.enabled = false
 
 Grails 3 apps by default used http://gradle.org[Gradle] 3.5. Grails 4 apps use Gradle 5.
 
-To upgrade to Gradle 5 execute: 
+You will need to upgrade your Gradle version defined in `gradle.properties`.
+
+Grails 3 app's `gradle.properties`
+
+[source, properties]
+.gradle.properties
+----
+...
+gradleWrapperVersion=3.5
+...
+----
+
+Grails 4 app's `gradle.properties`
+
+[source,groovy,subs="attributes"]
+.gradle.properties
+----
+...
+gradleWrapperVersion=5.0
+...
+----
+
+Next, complete the gradle wrapper upgrade by executing: 
 
 [source, bash]
 ----
